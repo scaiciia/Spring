@@ -5,7 +5,8 @@
     <title>Datos de la Persona</title>
 </head>
 <body>
-    <h1>Datos de la persona</h1>
+    <header th:replace="~{layout/plantilla :: header}"><h1>Titulo</h1></header>
+    <h2>Datos de la persona</h2>
     <a th:href="@{/}">Regresar</a>
     <br/>
     <form th:action="@{/guardar}" method="post" th:object="${persona}">
@@ -27,5 +28,6 @@
         <br/>
         <input type="submit" name="guardar" value="guardar"/>
     </form>
+    <footer th:replace="~{layout/plantilla :: footer}"/>
 </body>
 </html>
