@@ -10,7 +10,12 @@
         </header>
 
         <footer th:fragment="footer">
-            <p>[[#{plantilla.pie-pagina}]] <a href="https://www.linkedin.com/in/scaiciiam/" target="_blank">Santiago Caiciia Massello</a></p>
+            <div>
+                <br/>
+                <a th:href="@{/(lang=es)}">ES</a> |
+                <a th:href="@{/(lang=en)}">EN</a> |
+            </div>
+            <span>[[#{plantilla.pie-pagina}]] <a href="https://www.linkedin.com/in/scaiciiam/" target="_blank">Santiago Caiciia Massello</a></span>
         </footer>
     </body>
 </html>
